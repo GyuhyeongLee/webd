@@ -1,8 +1,25 @@
+/*
 $(function(){
     $(".nav > ul > li").mouseover(function(){
-        $(this).find(".submenu").stop().slideDown();
+        $(".nav > ul > li > ul").stop().slideDown();
     });
     $(".nav > ul > li").mouseout(function(){
-        $(this).find(".submenu").stop().slideUp();
+        $(".nav > ul > li > ul").stop().slideUp();
     });
 });
+*/
+
+window.onload = function(){
+    let navList = document.querySelector(".nav > ul");
+
+    navList.addEventListener("mouseover", function(){
+        navList.querySelectorAll(".submenu").forEach(sub => {
+            sub.style.height = "155px";
+        });
+    });
+    navList.addEventListener("mouseout", function(){
+        navList.querySelectorAll(".submenu").forEach(sub => {
+            sub.style.height = "0px";
+        });
+    });
+}

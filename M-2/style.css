@@ -62,11 +62,12 @@ a {
 .nav > ul > li > ul > li > a:hover {
     background: #8f8f8f;
 }
-/* JS CSS */
+/*
+JS CSS 
+*/
 .nav > ul > li > ul {
     display: block;
     height: 0;
-    height:155px;
     overflow: hidden;
     transition: all 600ms;
 }

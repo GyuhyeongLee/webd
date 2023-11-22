@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+#wrap {
+    width: 100%;
+    margin: 0 auto;
+}
+#header {
+    width: 100%;
+    display: flex;
+}
+.logo {
+    background: #efefef;
+    flex: 1;
+    height: 100px;
+}
+.nav {
+    background: #e2e2e2;
+    flex: 4;
+    height: 100px;
+}
+.menu {
+    display: flex;
+}
